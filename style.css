@@ -1,58 +1,142 @@
 /* Estilo Geral */
 
-body{
+body {
    font-family: "Montserrat", sans-serif;
    background-color: #191919;
    margin: 0;
    padding: 0;
 }
 
-.logo img{
-   width: 8vw;
+.logo img {
+   /*width: 8vw;*/
    max-width: 100%
 }
 
-.container{
+.container {
    max-width: 1200px;
    padding: 0 20px;
    margin: 10px auto;
 }
 
+.header-section {
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.title {
+   font-size: 40px;
+   font-weight: bold;
+   color: #cccccc;
+}
+
+.subtitle {
+   font-size: 28px;
+   font-weight: normal;
+   color: #cccccc;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.subtitle::after {
+   content: "";
+   /*width: 40vw;*/
+   width: 100px;
+   height: 1px;
+   background-color: #e500ce;
+}
+
 /* Estilo Geral */
 
-/* Estilo do Cabeçalho */
+/* Cabeçalho */
 
-.info-header{
+.info-header {
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding-top: 20px;
 }
 
-.info-menu{
+.info-menu {
    display: flex;
    align-items: center;
 }
 
-.menu ul{
+.menu ul {
    list-style: none;
    display: flex;
    padding: 0 10px;
 }
 
-.menu ul li{
+.menu ul li {
    margin-right: 20px;
 }
 
-.menu ul li a{
+.menu ul li a {
    text-decoration: none;
    color: #a7a7a7;
    transition: color 1s;
    font-size: 20px;
 }
 
-.menu ul li a:hover{
+.menu ul li a:hover {
    color: #e500ca;
 }
 
-/* Estilo do Cabeçalho */
+/* Cabeçalho */
+
+/* Apresentação */
+
+#presentation {
+   margin: 100px 0;
+}
+
+.info-presentation {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.info-presentation h1 {
+   font-size: 58px;
+   color: #d9d9d9;
+   line-height: 66px;
+}
+
+.info-presentation span {
+   background: rgb(73, 70, 255);
+   background: linear-gradient(90deg, rgba(73, 70, 255, 1) 0%, rgba(209, 0, 255, 1) 50%, rgba(255, 0, 232, 1) 100%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #d9d9d9;
+}
+
+.profile-photo {
+   width: 350px;
+   height: 350px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 100%;
+   background: linear-gradient(180deg,
+         rgba(73, 70, 255, 1) 20%,
+         rgba(209, 0, 255, 1) 100%,
+         rgba(255, 0, 232, 1) 100%);
+}
+
+.profile-photo img {
+   width: 335px;
+   border-radius: 100%;
+}
+
+/* Apresentação */
+
+/* Sobre mim */
+
+.info-aboutme p {
+   font-size: 18px;
+   color: #a7a7a7;
+}
